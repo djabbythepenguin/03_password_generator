@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+       <div id="wrapper">
+            <div id="mode-toggle" class="material-symbols-outlined" onclick="changeMode()">light_mode
+                    </span></div>
+            <h1>Generate a <br><span id="highlight">random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+
+            <button class="main-cta" onclick="displayPasswords()">Generate passwords</button>
+
+            <div id="toggles-wrap"> 
+
+                <div class="toggle-btn" id="toggle-symbol">
+                    <p>Symbols?</p>
+                    <div class="slider-bg" onclick="toggleSymbols()" id="slider-symbols-bg">
+                        <div class="slider" id="slider-symbols"></div>
+                    </div>
+                </div>
+
+                <div onclick="toggleNumbers()" class="toggle-btn" id="toggle-number">
+                    <p>Numbers?</p>
+                    <div class="slider-bg" id="slider-numbers-bg">
+                        <div class="slider" id="slider-numbers"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="line"></div>
+
+
+            <div id="result-wrapper">
+
+                <div class="result-field">
+                    <p id="password-1" class="result"></p>
+                </div>
+                <div class="result-field">
+                    <p id="password-2" class="result"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
