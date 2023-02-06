@@ -8,7 +8,7 @@ let symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","
 
 let allCharacters = []
 
-let darkmode = false
+let darkmode = true
 let allowSymbols = false
 let allowNumbers = false
 let password1 = ""
